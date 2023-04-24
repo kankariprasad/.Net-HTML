@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function BodyLoad(){
+            pic.src="..//public/download2.jpeg";
+            frmRegister.btnRegister.value = "Register";
+            frmLogin.btnLogin.value = "Login";
+        }
+    </script>
+</head>
+<body onload="BodyLoad()">
+    <div>
+        <img width="100" name="pic" height="100" border="1">
+    </div>
+    <div>
+        <form name="frmRegister">
+            <h2>Register User</h2>
+            <input name="btnRegister" type="button">
+             <input type="text" name="txtName">
+        </form>
+    </div>
+    <div>
+        <form name="frmLogin">
+            <h2>Login</h2>
+            <input type="email" name="txtEmail"><input name="btnLogin" type="button">
+        </form>
+    </div>
+</body>
+</html>
